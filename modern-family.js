@@ -58,7 +58,7 @@ realm.write(() => {
         bob.children.push(c);
     });
 
-    // Charlie and Doroty
+    // Charlie and Dorothy
     const charlie = realm.objectForPrimaryKey(Parent.name, "Charlie");
     const dorothy = realm.objectForPrimaryKey(Parent.name, "Dorothy");
 
@@ -88,6 +88,7 @@ realm.write(() => {
 
     const eric = realm.create(Parent.name, { name: "Eric", city: "Oslo", marriedTo: alice });
     alice.marriedTo = eric;
+    alice.city = "Oslo";
 });
 
 // -- 5 --
