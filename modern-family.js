@@ -125,3 +125,4 @@ let singles = realm.objects(Parent.name).filtered("marriedTo = null");
 singles.forEach(p => console.log(`  ${p.name}`));
 
 realm.close();
+process.exit(0);

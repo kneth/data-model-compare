@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "sqlite": "rm -f modern-family.db && cat modern-family.sql | sqlite3 -column modern-family.db",
+    "realm": "rm -f modern-family.realm && node modern-family.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,6 +14,6 @@
   "author": "Kenneth Geisshirt <k@zigzak.net>",
   "license": "Apache-2.0",
   "dependencies": {
-    "realm": "^10.13.0"
+    "realm": "20.2.0"
   }
 }

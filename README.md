@@ -1,8 +1,14 @@
 # data-model-compare
 Comparison of modeling and querying for various databases
 
+## Realm
+
+```sh
+npm run realm
+```
+
 ## SQLite
 
 ```sh
-modern-family.db &&  cat modern-family.sql| sqlite3 -column modern-family.db
+npm run sqlite
 ```
